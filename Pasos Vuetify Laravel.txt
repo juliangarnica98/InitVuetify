@@ -1,0 +1,23 @@
+1. laravel new candi                                   /*Crear proyecto*/
+2. cd candi                                            /*Ingresar al proyecto*/
+3. yarn add vue@^2.6.14 vue-template-compiler@^2.6.14  /*Agregar version vue 2*/
+4. yarn add vuetify									/*Agregar vuetify */
+5. code .												/*Abrir en VSCode*/
+6. .vue()												/*agregar vue al webpack*/
+7. yarn run watch										/*Correr node y sus dependencias*/
+8. app.js												/*Agregar contenido en app.js*/
+{
+	import Vue from 'vue'
+	import Vuetify from 'vuetify'
+	import 'vuetify/dist/vuetify.min.css'
+
+	Vue.use(Vuetify)
+	Vue.component('welcome-component',require('./components/WelcomeComponent.vue').default)
+
+	const app = new Vue({
+		vuetify: new Vuetify(),
+		el: '#app',
+	})
+}
+9. components           								/*agergar carpeta componentes*/
+10. assets y estilos									/*Agregar estilos de vuetif y assets*/
